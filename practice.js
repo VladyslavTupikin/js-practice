@@ -1,12 +1,10 @@
-Grasshopper - Messi goals function
-
+//Grasshopper - Messi goals function
 function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
-=================================
+//=================================
 
-Return Negative
-
+//Return Negative
 function makeNegative(num) {
   
   if (num < 0)
@@ -15,19 +13,17 @@ function makeNegative(num) {
   const negative = num * - 1;
   return negative;
 }
-======================================================
+//======================================================
 
-Grasshopper - Terminal game move function
-
+//Grasshopper - Terminal game move function
 function move (position, roll) {
   
   const shift = roll * 2;
   return shift + position;
 }
-======================================================
+//======================================================
 
-Grasshopper - Personalized Message
-
+//Grasshopper - Personalized Message
 function greet (name, owner) {
 
   if (name === owner)
@@ -35,9 +31,9 @@ function greet (name, owner) {
   else
     return "Hello guest"
 }
-=================================================
+//=================================================
 
-Keep Hydrated!
+//Keep Hydrated!
 function litres(time) {
   
   if(time < 1)
@@ -48,25 +44,23 @@ function litres(time) {
 
   return 0
 }
-=================================================
+//=================================================
 
-Opposites Attract
-
+//Opposites Attract
 function lovefunc(flower1, flower2){
   return (((flower1 + flower2) % 2) != 0) 
 }
-===========================================================
+//===========================================================
 
-Convert a string to an array
-
+//Convert a string to an array
 function stringToArray(string){
 
 return string.split(" ");
 
 }
-===========================================================
+//===========================================================
 
-DNA to RNA Conversion
+//DNA to RNA Conversion
 function DNAtoRNA(dna) {
    let tmp = [...dna];
      for (let i = 0; i < tmp.length; i++) {
@@ -76,9 +70,9 @@ function DNAtoRNA(dna) {
      }
     return tmp.join("");
 }
-===========================================================
+//===========================================================
 
-Smallest value of an array
+//Smallest value of an array
 function min(arr, toReturn) { 
   const tmp = [...arr];
   tmp.sort((a, b) => {
@@ -90,11 +84,10 @@ function min(arr, toReturn) {
   if (toReturn === "value") return arr[idx];
   if (toReturn === "index") return idx;
 }
-=======================================================
+//=======================================================
 
-You Can't Code Under Pressure #1
+//You Can't Code Under Pressure #1
 function doubleInteger(i) {
   return i * 2;
 }
-}
-=======================================================
+//=======================================================
