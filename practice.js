@@ -91,3 +91,19 @@ function doubleInteger(i) {
   return i * 2;
 }
 //=======================================================
+
+// Find maximun and minimum in list
+var min = function (list) {
+  list.sort((a, b) => {
+    return a - b;
+  });
+  return list[0];
+};
+
+var max = function (list) {
+  list.sort((a, b) => {
+    return a - b;
+  });
+  return list[list.length - 1];
+};
+//=======================================================
