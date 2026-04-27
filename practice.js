@@ -107,3 +107,73 @@ var max = function (list) {
   return list[list.length - 1];
 };
 //=======================================================
+
+// Geometry Basics: Circle Circumference in 2D
+function circleCircumference(circle) {
+  const diameter = 2 * circle.radius;
+  const circumference = diameter * Math.PI;
+  return circumference;
+}
+//=======================================================
+
+// Training JS #12: loop statement --for..in and for..of
+function giveMeFive(obj){
+  
+  let giveMeFiveArr = [];
+  const wordSize = 5;
+
+  for (key in obj) {
+    if (key.length === wordSize) {
+      giveMeFiveArr.push(key);
+    }
+
+    if (obj[key].length === wordSize) {
+      giveMeFiveArr.push(obj[key]);
+    }
+  }
+
+  return giveMeFiveArr;
+}
+//=======================================================
+
+//Understanding closures
+function buildFun(n) {
+  let res = [];
+
+  for (let i = 0; i < n; i++) {
+    res.push(function () {
+      console.log(i);
+      return i;
+    });
+  }
+  return res;
+}
+//=======================================================
+
+//Fun with ES6 Classes #2 - Animals and Inheritance
+class Shark extends Animal {
+  constructor(name, age, status) {
+    super(name, age, 0, "shark", status);
+  }
+}
+
+class Cat extends Animal {
+  constructor(name, age, status) {
+    super(name, age, 4, "cat", status);
+  }
+
+  introduce() {
+    return super.introduce() + "  Meow meow!";
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, age, status, master) {
+    super(name, age, 4, "dog", status);
+    this.master = master;
+  }
+
+  greetMaster() {
+    return `Hello ${this.master}`;
+  }
+}
