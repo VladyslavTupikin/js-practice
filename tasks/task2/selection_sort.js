@@ -20,7 +20,7 @@ function selectionSort(array) {
   for (let i = 0; i < array.length; i++) {
     const [minIdx, minVal] = findMinArr(array, i);
 
-    if (i < minIdx) {
+    if (i !== minIdx) {
       [array[i], array[minIdx]] = [array[minIdx], array[i]];
     }
   }
