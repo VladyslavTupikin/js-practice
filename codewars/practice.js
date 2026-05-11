@@ -1,79 +1,68 @@
 //Grasshopper - Messi goals function
-function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
 //=================================
 
 //Return Negative
 function makeNegative(num) {
-  
-  if (num < 0)
-    return num;
-  
-  const negative = num * - 1;
+  if (num < 0) return num;
+
+  const negative = num * -1;
   return negative;
 }
 //======================================================
 
 //Grasshopper - Terminal game move function
-function move (position, roll) {
-  
+function move(position, roll) {
   const shift = roll * 2;
   return shift + position;
 }
 //======================================================
 
 //Grasshopper - Personalized Message
-function greet (name, owner) {
-
-  if (name === owner)
-    return "Hello boss"
-  else
-    return "Hello guest"
+function greet(name, owner) {
+  if (name === owner) return "Hello boss";
+  else return "Hello guest";
 }
 //=================================================
 
 //Keep Hydrated!
 function litres(time) {
-  
-  if(time < 1)
-    return 0
-  
-  if(time >= 1.5)
-    return Math.floor(time*0.5);
+  if (time < 1) return 0;
 
-  return 0
+  if (time >= 1.5) return Math.floor(time * 0.5);
+
+  return 0;
 }
 //=================================================
 
 //Opposites Attract
-function lovefunc(flower1, flower2){
-  return (((flower1 + flower2) % 2) != 0) 
+function lovefunc(flower1, flower2) {
+  return (flower1 + flower2) % 2 != 0;
 }
 //===========================================================
 
 //Convert a string to an array
-function stringToArray(string){
-
-return string.split(" ");
-
+function stringToArray(string) {
+  return string.split(" ");
 }
 //===========================================================
 
 //DNA to RNA Conversion
 function DNAtoRNA(dna) {
-   let tmp = [...dna];
-     for (let i = 0; i < tmp.length; i++) {
-       if (tmp[i] == "T") {
-         tmp[i] = "U";
-       }
-     }
-    return tmp.join("");
+  let tmp = [...dna];
+  for (let i = 0; i < tmp.length; i++) {
+    if (tmp[i] == "T") {
+      tmp[i] = "U";
+    }
+  }
+  return tmp.join("");
 }
 //===========================================================
 
 //Smallest value of an array
-function min(arr, toReturn) { 
+function min(arr, toReturn) {
   const tmp = [...arr];
   tmp.sort((a, b) => {
     return a - b;
@@ -117,8 +106,7 @@ function circleCircumference(circle) {
 //=======================================================
 
 // Training JS #12: loop statement --for..in and for..of
-function giveMeFive(obj){
-  
+function giveMeFive(obj) {
   let giveMeFiveArr = [];
   const wordSize = 5;
 
