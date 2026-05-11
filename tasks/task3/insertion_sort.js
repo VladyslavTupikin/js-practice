@@ -36,7 +36,6 @@ function insertionSort(array) {
 
 function mergeSort(array) {
   if (array.length <= 1) {
-    insertionSort(array);
     return;
   }
 
