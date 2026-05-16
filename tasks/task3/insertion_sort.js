@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
 /*
-Test script for insertion and merge sort algorithms.
+insertion_sort.js: Test script for insertion and merge sort algorithms.
 Copyright (C) 2026  Vladyslav Tupikin
+Contact: vladtupikin7@gmail.com
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -83,7 +84,7 @@ async function main() {
   const arrInt2 = [9, -1, 4, -1, 8, 3, -9, 4, 3, 7, -5, 9, 8, 1, 2, 3];
 
   console.log(`Unsorted Array: \n${arrInt2}`);
-  mergeSort(arrInt);
+  mergeSort(arrInt2);
 
   console.log("");
   console.log(`Merge Sorted Array: \n${arrInt}`);
