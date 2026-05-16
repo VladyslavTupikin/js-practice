@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
 /*
-Test script for JS selection sort algorithm.
+selection_sort.js: Test script for selection sort algorithms.
 Copyright (C) 2026  Vladyslav Tupikin
+Contact: vladtupikin7@gmail.com
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -52,7 +53,7 @@ async function main() {
   selectionSort(arrInt);
 
   console.log("");
-  console.log(`Insert Sorted Array: \n${arrInt}`);
+  console.log(`Selection Sorted Array: \n${arrInt}`);
 }
 
 if (require.main === module) main();

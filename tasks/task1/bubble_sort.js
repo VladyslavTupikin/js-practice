@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
 /*
-Test script for JS bubble sort algorithm.
+bubble_sort.js: Test script for JS bubble sort algorithm.
 Copyright (C) 2026  Vladyslav Tupikin
+Contact: vladtupikin7@gmail.com
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -36,7 +37,7 @@ function bubbleSort(array) {
         array[j] = array[j + 1];
         array[j + 1] = tmp;
 
-        let swapped = true;
+        swapped = true;
       }
     }
 
