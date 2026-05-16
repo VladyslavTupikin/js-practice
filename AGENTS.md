@@ -51,8 +51,18 @@ If the Agent detects a conflict between its current response and the principles 
 The project is strictly an **ES6+ (ECMAScript 2015+)** environment using **ES Modules (ESM)**.
 
 - **Standard:** Use modern JavaScript syntax (e.g., `const`/`let`, arrow functions, destructuring, template literals, private class fields `#`).
+- **Naming Conventions:** Follow modern JavaScript conventions:
+  - **PascalCase** for Classes (e.g., `class Employee`).
+  - **camelCase** for variables, functions, and methods (e.g., `const userAccount`).
+  - **UPPER_SNAKE_CASE** for true constants (e.g., `const MAX_RETRY_ATTEMPTS`).
 - **Module System:** Use `import` and `export` exclusively. Do **not** suggest `require()`, `module.exports`, or CommonJS-specific patterns.
 - **Asynchronous Patterns:** Prefer `async/await` over raw `Promises` or callback-based logic.
+- **Clean Code & Maintainability:**
+  - **Single Responsibility:** Functions and classes must have one clear purpose.
+  - **Explicit over Implicit:** Avoid hidden side effects; functions should be predictable.
+  - **Error Handling:** Never swallow errors in `catch` blocks; ensure failures are observable.
+  - **Domain Modeling:** Use classes/objects to encapsulate related data (avoid Primitive Obsession).
+  - **Intention-Revealing Names:** Prioritize descriptive names over brevity; avoid cryptic abbreviations.
 - **Avoid Legacy Syntax:** Never suggest `var`, `prototype` manipulation for new logic, or outdated string concatenation.
 
 ## 6. Operational Constraints
