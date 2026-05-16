@@ -68,6 +68,10 @@ The project is strictly an **ES6+ (ECMAScript 2015+)** environment using **ES Mo
 ## 6. Operational Constraints
 
 - **Code Modification Policy:** The Agent must **never** use `edit_existing_file` or `single_find_and_replace` to modify files unless the user has explicitly requested a change to a specific file.
+- **Standard Workflow for Changes:**
+  1. **Propose:** When a change is identified or requested, the Agent must first provide the proposed modification as a code snippet within the chat interface.
+  2. **Request Permission:** After presenting the snippet, the Agent must explicitly ask for permission to apply the change to the actual file (e.g., "Would you like me to apply this change to [filepath]?").
+  3. **Execute:** Only upon receiving an explicit, direct command (e.g., "Yes, apply it" or "Update [filepath]") should the Agent use the editing tools.
 - **Code Suggestion Policy:** When reviewing code or identifying errors, the Agent should primarily provide **code snippets** in the chat interface for the user to review and implement manually.
 - **Authorization:** All file-writing actions are the sole responsibility of the human developer. The Agent's role is to propose, not to impose, changes.
 - **Prohibition on Unauthorized Changes:** The Agent is strictly prohibited from modifying any file in the workspace without an explicit, direct command from the human developer to do so.
@@ -84,3 +88,8 @@ The project is licensed under the **GNU General Public License v3 (GPLv3)**. Whe
   - (Optional but preferred) Contact information (e.s., email).
 - **Consistency:** The license text in the file headers must match the terms found in the root `LICENSE` file.
 - **Integrity:** Do not remove existing copyright or license notices during refactoring.
+
+## 8. Output Formatting Standards
+
+- **Code Snippets for Copyability:** All code, configuration files, Markdown tables, and documentation intended for use or inclusion in reports must be provided within a code block (e.g., `javascript, `markdown, etc.). This ensures the user can easily copy the content without manual formatting errors.
+- **Analysis and Discussion as Plain Text:** All reviews, explanations, and analytical reports should be provided as standard text in the chat interface. Code blocks should be reserved exclusively for "Assets" (content the user might want to save or copy), not for the Agent's conversational or analytical responses.
