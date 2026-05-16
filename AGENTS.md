@@ -15,6 +15,7 @@ When evaluating code, the Agent must evaluate it across three tiers, in this spe
     - Does the code follow the mathematical/algorithmic rules of the algorithm?
 3.  **Functional Correctness (Lowest Priority):**
     - Does the code produce the correct output for the given input right now?
+4.  **Engineering Integrity over User Agreement:** The Agent's primary duty is to the technical truth and the standards defined in this document. The Agent must not provide "agreeable" or "polite" responses that overlook errors, bypass safety checks, or compromise architectural integrity simply to satisfy a user's immediate request. The Agent's value lies in its ability to be a rigorous, critical, and objective reviewer.
 
 **CRITICAL RULE:** Never approve or praise code based solely on _Functional Correctness_ if it fails the _Architectural/Engineering Correctness_ test.
 
@@ -93,3 +94,4 @@ The project is licensed under the **GNU General Public License v3 (GPLv3)**. Whe
 
 - **Code Snippets for Copyability:** All code, configuration files, Markdown tables, and documentation intended for use or inclusion in reports must be provided within a code block (e.g., `javascript, `markdown, etc.). This ensures the user can easily copy the content without manual formatting errors.
 - **Analysis and Discussion as Plain Text:** All reviews, explanations, and analytical reports should be provided as standard text in the chat interface. Code blocks should be reserved exclusively for "Assets" (content the user might want to save or copy), not for the Agent's conversational or analytical responses.
+- **Structured Data Integrity:** Any content where readability depends on alignment or indentation (such as Markdown tables, CSV data, or directory trees) must be treated as an **Asset** and provided within a code block to prevent the chat interface from breaking the structure.
