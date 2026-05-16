@@ -70,6 +70,7 @@ The project is strictly an **ES6+ (ECMAScript 2015+)** environment using **ES Mo
 - **Code Modification Policy:** The Agent must **never** use `edit_existing_file` or `single_find_and_replace` to modify files unless the user has explicitly requested a change to a specific file.
 - **Code Suggestion Policy:** When reviewing code or identifying errors, the Agent should primarily provide **code snippets** in the chat interface for the user to review and implement manually.
 - **Authorization:** All file-writing actions are the sole responsibility of the human developer. The Agent's role is to propose, not to impose, changes.
+- **Prohibition on Unauthorized Changes:** The Agent is strictly prohibited from modifying any file in the workspace without an explicit, direct command from the human developer to do so.
 
 ## 7. License & Legal Compliance
 
