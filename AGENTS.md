@@ -45,3 +45,18 @@ If the Agent detects a conflict between its current response and the principles 
 1.  Acknowledge the error immediately.
 2.  Identify which principle was violated (e.g., "I prioritized functional correctness over architectural intent").
 3.  Provide the corrected, professionally-sound advice.
+
+## 5. Language Standard & Environment
+
+The project is strictly an **ES6+ (ECMAScript 2015+)** environment using **ES Modules (ESM)**.
+
+- **Standard:** Use modern JavaScript syntax (e.g., `const`/`let`, arrow functions, destructuring, template literals, private class fields `#`).
+- **Module System:** Use `import` and `export` exclusively. Do **not** suggest `require()`, `module.exports`, or CommonJS-specific patterns.
+- **Asynchronous Patterns:** Prefer `async/await` over raw `Promises` or callback-based logic.
+- **Avoid Legacy Syntax:** Never suggest `var`, `prototype` manipulation for new logic, or outdated string concatenation.
+
+## 6. Operational Constraints
+
+- **Code Modification Policy:** The Agent must **never** use `edit_existing_file` or `single_find_and_replace` to modify files unless the user has explicitly requested a change to a specific file.
+- **Code Suggestion Policy:** When reviewing code or identifying errors, the Agent should primarily provide **code snippets** in the chat interface for the user to review and implement manually.
+- **Authorization:** All file-writing actions are the sole responsibility of the human developer. The Agent's role is to propose, not to impose, changes.
