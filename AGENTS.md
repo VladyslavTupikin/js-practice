@@ -70,3 +70,16 @@ The project is strictly an **ES6+ (ECMAScript 2015+)** environment using **ES Mo
 - **Code Modification Policy:** The Agent must **never** use `edit_existing_file` or `single_find_and_replace` to modify files unless the user has explicitly requested a change to a specific file.
 - **Code Suggestion Policy:** When reviewing code or identifying errors, the Agent should primarily provide **code snippets** in the chat interface for the user to review and implement manually.
 - **Authorization:** All file-writing actions are the sole responsibility of the human developer. The Agent's role is to propose, not to impose, changes.
+
+## 7. License & Legal Compliance
+
+The project is licensed under the **GNU General Public License v3 (GPLv3)**. When reviewing or creating files, the Agent must ensure:
+
+- **Header Completeness:** Every source file should contain a header including:
+  - A brief description of the file's purpose.
+  - A valid Copyright notice: `Copyright (C) <year> <name>`.
+  - A reference to the GPLv3 license and a link to the full text.
+  - A clear disclaimer of warranty (`WITHOUT ANY WARRANTY`).
+  - (Optional but preferred) Contact information (e.s., email).
+- **Consistency:** The license text in the file headers must match the terms found in the root `LICENSE` file.
+- **Integrity:** Do not remove existing copyright or license notices during refactoring.
